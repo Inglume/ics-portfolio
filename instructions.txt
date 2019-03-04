@@ -1,0 +1,18 @@
+include best and relevant examples of my learning
+pages on:
+myself and my interests
+tutorial page on course relevant topics
+other projects I'm involved in
+ideas for future software projects
+
+specifically:
+- a page about who I am as a person and student
+- one page tutorial teaching each topic covered in the class (must be original or citing an online resource)
+- application of each concept taught in the course: definition, analyses, independent example of application, explanation of impact of structure on program, explanation of approach, lessons learned from mistakes
+- solution of problems solved relavant to concept
+- own work: work of other people should be indicated and explained as to why it's used
+
+each section will contain:
+topic
+theory explanation
+application example

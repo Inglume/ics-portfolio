@@ -1,0 +1,4 @@
+page on oop (versus proc and func, objects, attributes, behaviours)
+page on writing oop and stuff static, private, gets and sets)
+page on inheritance (class casting too)
+page on ssssssss
