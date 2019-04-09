@@ -2,18 +2,48 @@
 
 <head>
 Nicholas Glenn
+<p>Who am I?
 <style>
-.center {
+.menubar {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	background-color: #00FF00;
+}
+
+.button {
+	background-color: #55FF55;
+	text-align: center;
+	padding: 20px;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	/*padding: 15px 25px;
+	text-align: center;
+	font-size: 16px;*/
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #99FF99;
+}
+/*.center {
 max-width: 640px;
 margin: auto;
-}
+}*/
 </style>
 </head>
 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 <body>
-<div class="center">
 <p>Home Page<br><br>
-</p>
-<a href="oop.html">OOP</a>
+<div class="menubar">
+	<a href="oop1.html" class = "button">OOP Part 1</a>
+<a href="arr-list.html" class = "button">Arrays / Arraylist</a>
+<a href="sort-search.html" class = "button">Sort / Search</a>
+<a href="recursion.html" class = "button">Recursion</a>
+<a href="oop2.html" class = "button">OOP Part 2 / Program Design / Polymorphism</a>
+</div>
 
 </body>
