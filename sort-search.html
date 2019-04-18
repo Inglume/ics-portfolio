@@ -1,29 +1,21 @@
 <html>
-
-<style>
-.center {
-	max-width: 800px;
-		margin: auto;
-}
-</style>
-<title> Object-Oriented Programming </title>
+	<title> Object-Oriented Programming </title>
 	<head>
-		Nicholas Glenn
+		<link rel="stylesheet" href="style.css">
+		<iframe width="100%" height="32%" frameBorder="0" scrolling="no" src="header.html"></iframe>
 	</head>
 
 	<body>
-		<div class="center">
-			<p> Object-Oriented Programming
-			<p><a href="home.html">Home</a>
-			<h1> What is OOP? </h1>
-			<p> Object-Oriented Programming (OOP) is the representation of a program as objects. The Java language is completely based upon everything being represented as classes and objects. Objects are created by classes, which serve as a template for objects made of that class type. Objects are created by calling the class's constructor, which makes an instance of an object.
-			<p> If you have a class 'Animal', you may make an Animal object by calling its constructor with the same name, with parentheses to specify the parameters: <br>
+			<h1> Sorts </h1>
+			<p> Sorting is very important in sgjhioa. Names are sorted on an attendance list, times are sorted in a race, blabhlabhab. That's why there are so many different sorting algorithms.
+			<h2> Insertion and Selection Sort </h2>
+			<p> The simplest sorting algorithms may be the insertion and selection sort. They are not the most efficient sorts, but they are straight-forward. The insertion and selection sorts both partition the array into an unsorted and sorted area. At the beginning of the sort, the unsorted area has no elements and the sorted area takes up the entire array. As the sort progresses, the sorted area increases and the unsorted area decreases until the entire array is sorted.<br>
+			<p> The selection sort works by searching the unsorted part of the array for the minimum element and adding it to the sorted area.<br>
+			<p> The insertion sort works by taking the first unsorted element and inserting it in the appropriate place in the sorted area.<br>
 			Animal rex = new Animal(); <br>
-			In this example, the class is Animal, the object is rex, and rex is set to an Animal created by the constructor Animal() with no parameters.
-			<p> A class consists of attributes and behaviors, known more formally as variables and methods respectively. 
-			<p> Variables can either be instance or local, which describes the <b>scope</b> of the variables. Instance means they are defined at the class level, anything inside the class may use the variable since it has been defined outside of any blocks. Local means the variable is defined in some sort of block (of curly braces '{}'), which indicates the variable only exists within the occurence of the block. This happens most commonly inside methods, but may also happen inside loops or conditional statements.
-			<p> Methods are often classified as accessors or mutators. Accessors retrieve the value of a variable and mutators change the value of a variable.
-			<p> One large reason why OOP exists is because of encapsulation. Information stored inside a class can stay hidden from the rest of your program. One process of encapsulation is by changing the <b>scope</b> of your variables. Another way is by using modifiers for instance variables and methods. There are two most widely-used access modifiers, being <i>public</i> and <i>private</i>. Public can be accessed by anything outside and inside of the class, but private can only be accessed by the class itself.
+			<p> Selection sort always has a time complexity of O(n^2), whereas insertion only has a worst case of O(n^2) and has a best case of O(n) if the data is already sorted or close to sorted. <br>
+			<h2> Merge Sort </h2>
+			<p> The merge sort is a sort that is used widely for its low time complexity of )(n log n), which stays the same no matter how the data is arranged. The merge sort is based off the doctrine "divide and conquer", which is breaking down the problem into smaller and more manageable pieces. The sort starts by splitting the array into halves, until each subarray is of length one. Then each sorted subarray is merged with another adjacent subarray. Since the subarrays are already sorted, less comparisons are made and the sort is optimized.<br>
 
 			<br><br><br><br>
 			<table>
