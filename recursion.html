@@ -1,20 +1,29 @@
 <html>
-	<title> Object-Oriented Programming </title>
+	<title> Recursion </title>
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<iframe width="100%" height="32%" frameBorder="0" scrolling="no" src="header.html"></iframe>
 	</head>
 
 	<body>
-			<h1> What is OOP? </h1>
-			<p> Object-Oriented Programming (OOP) is the representation of a program as objects. The Java language is completely based upon everything being represented as classes and objects. Objects are created by classes, which serve as a template for objects made of that class type. Objects are created by calling the class's constructor, which makes an instance of an object.
-			<p> If you have a class 'Animal', you may make an Animal object by calling its constructor with the same name, with parentheses to specify the parameters: <br>
-			Animal rex = new Animal(); <br>
-			In this example, the class is Animal, the object is rex, and rex is set to an Animal created by the constructor Animal() with no parameters.
-			<p> A class consists of attributes and behaviors, known more formally as variables and methods respectively. 
-			<p> Variables can either be instance or local, which describes the <b>scope</b> of the variables. Instance means they are defined at the class level, anything inside the class may use the variable since it has been defined outside of any blocks. Local means the variable is defined in some sort of block (of curly braces '{}'), which indicates the variable only exists within the occurence of the block. This happens most commonly inside methods, but may also happen inside loops or conditional statements.
-			<p> Methods are often classified as accessors or mutators. Accessors retrieve the value of a variable and mutators change the value of a variable.
-			<p> One large reason why OOP exists is because of encapsulation. Information stored inside a class can stay hidden from the rest of your program. One process of encapsulation is by changing the <b>scope</b> of your variables. Another way is by using modifiers for instance variables and methods. There are two most widely-used access modifiers, being <i>public</i> and <i>private</i>. Public can be accessed by anything outside and inside of the class, but private can only be accessed by the class itself.
+			<h1> What is Recursion? </h1>
+			<p> The definition of recursion is "the repeated application of a recursive procedure (a procedure that calls itself)". Recursion is a way of solving a problem which involves some sort of repetition.
+			<p> A recursive method has two parts, a base case and a recursive case. The recursive case is what is executed by default. It must also call itself in some way. asdfdnnnnnncmjcuuc. The base case is executed when a specific condition is met. It must also stop the recursion by not calling itself.
+			<p> In a recursive method, returning values is very important. Conventially, a recursive method will be a return method. The recursive case's return statement will always include calling itself to continue the recursion, and the base case's return statement will not. Return statements allows for tail recursion to be done, which adds something to the return value for every recursive call.
+			public int factorsOfTwo(int n) {
+			&nbsp;if (n % 2 == 1) {
+			&nbsp;&nbsp;return 0;
+			&nbsp;}
+			&nbsp;return factorsOfTwo(n % 2) + 1;
+			}
+			<p> In a recursive method, method parameters are also very important. This allows for values to be passed along as the recursion continues.
+			<p> Variables can either be instance or local, which describes the d of the variables. Instance means they are defined at the class level, anything inside the class may use the variable since it has been defined outside of any blocks. Local means the variable is defined in some sort of block (of curly braces '{}'), which indicates the variable only exists within the occurence of the block. This happens most commonly inside methods, but may also happen inside loops or conditional statements.
+			<h1> Recursion versus Iteration </h1>
+			<p> Recursion and iteration are very similar and can often be used in place of each other. Making the choice between either way of solving a problem depends on your limitations, and this is when knowing their advantages is essential for making the correct choice at times.
+			<h2> Advantages of Recursion </h2>
+			<p> A recursive solution is often a much more simple and graceful solution than an iterative solution.
+			<h2> Advantages of Iteration </h2>
+			<p> An iterative solution is often more efficient than a recursive one. Calling a function is much more perfomance-heavy than using a loop. It takes more time and each call will take up memory on the stack and cumulate depending on the depth of the recursion. If the recursion goes too deep and many resources are being used, a StackOverflowError will be thrown. With iteration, the stack does not have to store each 
 
 			<br><br><br><br>
 			<table>

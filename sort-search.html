@@ -1,5 +1,5 @@
 <html>
-	<title> Object-Oriented Programming </title>
+	<title> Searches and Sorts </title>
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<iframe width="100%" height="32%" frameBorder="0" scrolling="no" src="header.html"></iframe>
@@ -7,15 +7,17 @@
 
 	<body>
 			<h1> Sorts </h1>
-			<p> Sorting is very important in sgjhioa. Names are sorted on an attendance list, times are sorted in a race, blabhlabhab. That's why there are so many different sorting algorithms.
+			<p> Sorting is very important in all sorts of ways. Names are sorted on an attendance list, times are sorted in a race, blabhlabhab. That's why there are so many different sorting algorithms that all work so differently.
 			<h2> Insertion and Selection Sort </h2>
-			<p> The simplest sorting algorithms may be the insertion and selection sort. They are not the most efficient sorts, but they are straight-forward. The insertion and selection sorts both partition the array into an unsorted and sorted area. At the beginning of the sort, the unsorted area has no elements and the sorted area takes up the entire array. As the sort progresses, the sorted area increases and the unsorted area decreases until the entire array is sorted.<br>
-			<p> The selection sort works by searching the unsorted part of the array for the minimum element and adding it to the sorted area.<br>
-			<p> The insertion sort works by taking the first unsorted element and inserting it in the appropriate place in the sorted area.<br>
-			Animal rex = new Animal(); <br>
-			<p> Selection sort always has a time complexity of O(n^2), whereas insertion only has a worst case of O(n^2) and has a best case of O(n) if the data is already sorted or close to sorted. <br>
+			<p> The simplest sorting algorithms may be the insertion and selection sort. They are not the most efficient sorts, but they are straight-forward. The largest similarity between the two sorts is that they partition the array into an unsorted and sorted area. At the beginning of the sort, the unsorted area has no elements and the sorted area takes up the entire array. As the sort progresses, the sorted area increases and the unsorted area decreases until the entire array is sorted.<br>
+			<p> The selection sort works by searching the unsorted part of the array for the minimum element and adding it to the sorted area. This is repeated until the array is sorted.<br>
+			<p> The insertion sort works by taking the first unsorted element and inserting it in the appropriate place in the sorted area. This is repeated until the array is sorted.<br>
+			<p> Selection sort always has a time complexity of O(n^2), whereas insertion only has a worst case of O(n^2) and has a best case of O(n) if the data is already sorted. <br>
 			<h2> Merge Sort </h2>
-			<p> The merge sort is a sort that is used widely for its low time complexity of )(n log n), which stays the same no matter how the data is arranged. The merge sort is based off the doctrine "divide and conquer", which is breaking down the problem into smaller and more manageable pieces. The sort starts by splitting the array into halves, until each subarray is of length one. Then each sorted subarray is merged with another adjacent subarray. Since the subarrays are already sorted, less comparisons are made and the sort is optimized.<br>
+			<p> The merge sort is a sort that is used widely for its low time complexity of (n log n), which stays the same no matter how the data is arranged. The merge sort is based off the doctrine "divide and conquer", which is breaking down the problem into smaller and more manageable pieces. The sort starts by splitting the array into halves, until each subarray is of length one. Then each sorted subarray is merged with another adjacent subarray. Since the subarrays are already sorted, less comparisons are required and the sort is optimized.<br>
+
+			<h2> Heap Sort </h2>
+			<p> The heap sort is a sort I learned as part of another assignment to demonstrate how a sorting algorithm works. It is similar to the merge sort (it has the same time complexity), but the way it works is very different. The heap sort uses the heap data structure, which is based off of the binary tree data structure. In a tree, every parent node has two children.
 
 			<br><br><br><br>
 			<table>
@@ -36,9 +38,6 @@
 					<td>Definition</td>
 				</tr>
 			</table>
-
-			<p> Introductory exercise to OOP by representing a fairytale with Java OOP concepts: 
-			<a href="shrek.html">Intro to OOP</a>
 	</body>
 
 
