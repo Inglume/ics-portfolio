@@ -6,6 +6,25 @@
 </head>
 
 <body>
+<h1> Polymorphism </h1>
+<p> Polymorphism is the idea that you can have subclasses casted up to their superclass and then casted back down to their subclass. This may be a bit hard to grasp, but it is crucial to know for OOP. First, I'll give an example of class casting using some familiar terms.</p>
+<p> Let's say you have a class Animal, with a subclass Mammal and the class Mammal. You can <b>upcast</b> Mammal to Animal.</p>
+<p> Animal doggy = new Mammal(); </p>
+<p> The java compiler will automatically upcast Mammal to Animal, you do not need to explicitly cast it with parentheses. </p>
+<p> On the other hand, if you want to <b>downcast</b> back down to Mammal, you must explicitly cast it down. </p>
+<p> Mammal puppy = (Mammal) doggy; </p>
+<p> One reason why you would want to downcast and upcast all of this is to be able to refer to many subclasses with one superclass. For example, if you have a method that increases the age of an Animal by one, you don't need to create a new method for each subclass of Animal because any subclass of Animal will be upcasted to Animal automatically. </p>
+<p> public void incAge(Animal a) {<br>
+&nbsp;a.age++;<br>
+}</p>
+<p> In this method, any subclass of Animal may be passed and it would still work. </p>
+<p> Dog rex = new Dog();<br>
+    incAge(rex);<br>
+    Cat muffin = new Cat();<br>
+    incAge(muffin);<br>
+</p>
+<p> This can even be done with interfaces: </p>
+
 <h1> Composition </h1>
 <p> using things in your thing
 
