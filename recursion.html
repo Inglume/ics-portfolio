@@ -1,11 +1,12 @@
 <html lang="en">
+
 <head>
     <title> Recursion </title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<iframe width="100%" height="32%" frameBorder="0" scrolling="no" src="header.html"></iframe>
+<iframe width="100%" height="32%" src="header.html"></iframe>
 <h1> What is Recursion? </h1>
 <p> The definition of recursion is "the repeated application of a recursive procedure (a procedure that calls itself)".
     Recursion is a way of solving a problem which involves some sort of repetition. </p>
@@ -16,12 +17,12 @@
     The recursive case's return statement will always include calling itself to continue the recursion, and the base
     case's return statement will not. Return statements allows for tail recursion to be done, which adds something to
     the return value for every recursive call. </p>
-public int factorsOfTwo(int n) {
-&nbsp;if (n % 2 == 1) {
-&nbsp;&nbsp;return 0;
-&nbsp;}
-&nbsp;return factorsOfTwo(n % 2) + 1;
-}
+<p> public int factorsOfTwo(int n) {<br>
+&nbsp;if (n % 2 == 1) {<br>
+&nbsp;&nbsp;return 0;<br>
+&nbsp;}<br>
+&nbsp;return factorsOfTwo(n % 2) + 1;<br>
+    } </p>
 <p> In a recursive method, method parameters are also very important. This allows for values to be passed along as the
     recursion continues. </p>
 <p> Variables can either be instance or local, which describes the d of the variables. Instance means they are defined
