@@ -2,37 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Object-Oriented Programming</title>
+    <title>Object-Oriented Programming: Part 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <iframe width="100%" scrolling="no" src="header.html"></iframe>
 <p></p>
-<h1> What is OOP? </h1>
+<h1> OOP Part 1 </h1>
+<h2> What is OOP? </h2>
 <p> Object-Oriented Programming (OOP) is the representation of a program as objects. The Java language is completely
     based upon everything being represented as classes and objects. Objects are created by classes, which serve as a
     template for objects made of that class type. Objects are created by calling the class's constructor, which makes an
-    instance of an object.
+    instance of an object. </p>
 <p> If you have a class 'Animal', you may make an Animal object by calling its constructor with the same name, with
     parentheses to specify the parameters: <br>
-    Animal doggy = new Animal(); <br>
-    In this example, the class is Animal, the object is doggy, and doggy is set to an Animal created by the constructor
-    Animal() with no parameters.
-<p> A class consists of attributes and behaviors, known more formally as variables and methods respectively.
+<pre><code> Animal doggy = new Animal(); </code></pre>
+<p> In this example, the class is Animal, the object is doggy, and doggy is set to an Animal created by the constructor
+    Animal() with no parameters. </p>
+<p> A class consists of attributes and behaviors, known more formally as variables and methods respectively. </p>
 <p> Variables can either be instance or local, which describes the <b>scope</b> of the variables. Instance means they
     are defined at the class level, anything inside the class may use the variable since it has been defined outside of
     any blocks. Local means the variable is defined in some sort of block (of curly braces '{}'), which indicates the
     variable only exists within the occurrence of the block. This happens most commonly inside methods, but may also
-    happen inside loops or conditional statements.
-<p> Methods are often classified as accessors or mutators. Accessors retrieve the value of a variable and mutators
-    change the value of a variable.
-<p> One large reason why OOP exists is because of encapsulation. Information stored inside a class can stay hidden from
-    the rest of your program. One process of encapsulation is by changing the <b>scope</b> of your variables. Another
-    way is by using modifiers for instance variables and methods. There are two most widely-used access modifiers, being
-    <i>public</i> and <i>private</i>. Public can be accessed by anything outside and inside of the class, but private
-    can only be accessed by the class itself.
-
-    <br><br><br><br>
+    happen inside loops or conditional statements. </p>
+<p> In an OOP approach to program design, Methods are often classified as <b>accessors</b> or <b>mutators</b>. Accessors
+    (AKA get methods) retrieve the value of a variable. Mutators (AKA set methods) change the value of a variable. Get
+    methods always start with 'get' and are followed by the variable name, and set methods start with 'set'. The
+    reason why these exist will be explained in OOP Part 2. </p>
+<h2> Inheritance </h2>
+<p> Of the four OOP principles, inheritance is one of the more complex principles. Inheritance is when subclasses <i>inherit</i>
+    attributes and behaviours from super classes. All subclasses will be of the type superclass and have all of their
+    variables and methods. Inheritance is done in Java by using the <i>extends</i> keyword when defining a class. When
+    doing this, the class will inherit all variables and methods from the class that is being extended. Here is an
+    example of a class being extended: </p>
+<pre><code> public class Animal {
+     private String name;
+     public void sayName() {
+         System.out.println(name);
+     }
+ }
+ public class Dog extends Animal {
+     public void bark() {
+         System.out.println("Ruff!");
+     }
+ }
+</code></pre>
+<p> The following actions can be made: </p>
+<pre><code>
+ Dog rex = new Dog();
+ rex.sayName();
+ rex.bark();
+</code></pre>
 <table>
     <tr>
         <th>Keyword</th>
@@ -40,16 +60,22 @@
     </tr>
     <tr>
         <td>Variable</td>
-        <td>Definition</td>
+        <td>An attribute that stores a value</td>
     </tr>
     <tr>
         <td>Method</td>
-        <td>Definition</td>
+        <td>A behaviour an object can perform</td>
     </tr>
     <tr>
         <td>Superclass</td>
-        <td>Definition</td>
+        <td>A parent class that has at least one subclass that inherits from it</td>
+    </tr>
+    <tr>
+        <td>Subclass</td>
+        <td>A class that inherits from a superclass</td>
     </tr>
 </table>
+
+<br><br><br><br>
 </body>
 </html>

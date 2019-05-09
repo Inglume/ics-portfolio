@@ -8,35 +8,47 @@
 <body>
 <iframe width="100%" scrolling="no" src="header.html"></iframe>
 <p></p>
-<h1> Polymorphism </h1>
+<h1> OOP Part 2 </h1>
+<h2> Encapsulation </h2>
+<p> One reason why OOP exists is because of encapsulation. Information stored inside a class can stay hidden from
+    the rest of your program, classes outside of the class's inheritance, or anything but the class. One process of
+    encapsulation is by changing the <b>scope</b> of your variables. Another way is by using modifiers for instance
+    variables and methods. There are two most widely-used access modifiers, being <i>public</i> and <i>private</i>.
+    Public can be accessed by anything outside and inside of the class, but private can only be accessed by the class
+    itself. </p>
+<p> Often times, instance variables will be declared as private. This provides some security so objects that are made
+    can't be tampered with, but this means the <i>dot operator</i> can't be used. In order to see the variable,
+    accessors and mutators must be used instead. </p>
+<h2> Polymorphism </h2>
 <p> Polymorphism is the idea that you can have subclasses casted up to their superclass and then casted back down to
     their subclass. This may be a bit hard to grasp, but it is crucial to know for OOP. First, I'll give an example of
     class casting using some familiar terms.</p>
 <p> Let's say you have a class Animal, with a subclass Mammal and the class Mammal. You can <b>upcast</b> Mammal to
     Animal.</p>
-<p> Animal doggy = new Mammal(); </p>
+<pre><code> Animal doggy = new Mammal(); </code></pre>
 <p> The java compiler will automatically upcast Mammal to Animal, you do not need to explicitly cast it with
     parentheses. </p>
 <p> On the other hand, if you want to <b>downcast</b> back down to Mammal, you must explicitly cast it down. </p>
-<p> Mammal puppy = (Mammal) doggy; </p>
+<pre><code> Mammal puppy = (Mammal) doggy; </code></pre>
 <p> One reason why you would want to downcast and upcast all of this is to be able to refer to many subclasses with one
     superclass. For example, if you have a method that increases the age of an Animal by one, you don't need to create a
     new method for each subclass of Animal because any subclass of Animal will be upcasted to Animal automatically. </p>
-<p> public void incAge(Animal a) {<br>
-    &nbsp;a.age++;<br>
-    }</p>
+<pre><code> public void incAge(Animal a) {
+     a.age++;
+ }
+</code></pre>
 <p> In this method, any subclass of Animal may be passed and it would still work. </p>
-<p> Dog rex = new Dog();<br>
-    incAge(rex);<br>
-    Cat muffin = new Cat();<br>
-    incAge(muffin);<br>
-</p>
-<p> This can even be done with interfaces: </p>
+<pre><code> Dog rex = new Dog();
+ incAge(rex);
+ Cat muffin = new Cat();
+ incAge(muffin);
+</code></pre>
 
-<h1> Composition </h1>
-<p> using things in your thing
-
-    <br><br><br><br>
+<h2> Abstraction </h2>
+<p> Abstraction </p>
+<p> Using abstraction and polymorphism together, it is possible to make objects of an abstract datatype. These objects
+    aren't really abstract, but they are upcasted to make it seem like they are. </p>
+<br><br><br><br>
 <table>
     <tr>
         <th>Keyword</th>
