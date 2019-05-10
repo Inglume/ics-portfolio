@@ -10,7 +10,10 @@
 <iframe width="100%" height="62px" src="lessons.html"></iframe>
 <p></p>
 <h1> Arrays </h1>
-<p> An array is Array structure which can hold multiple elements of one data type each located at indices. Arrays are
+<img src="array.jpg" class="center">
+<p></p>
+<p> An array is Array structure which can hold multiple <b>elements</b> of one data type each located at <b>indices</b>.
+    Arrays are
     0-indexed, meaning the first index is index 0, the second is 1, and so on. The last index of an array will be its
     length minus one. Arrays have a fixed size, but their contents are not fixed. The array data type is specified by
     brackets '[]' following whatever data type it is supposed to hold. To instantiate an array, a size must be set for
@@ -19,7 +22,10 @@
  String[] words = new String[999];
 </code></pre>
 <h1> ArrayLists </h1>
-<p> An ArrayList is a collection which is similar to an array in that it has elements with indices. But, it can only
+<img src="list.jpg" class="center">
+<p></p>
+<p> An ArrayList is a <b>Collection</b> which is similar to an array in that it has elements with indices. But, it can
+    only
     hold objects (unlike the array which can hold primitive datatypes as well). ArrayLists also don't have a fixed size,
     elements can be dynamically added or removed. Whenever an element must be added or removed, the size is
     automatically adjusted by the ArrayList object. The object type the ArrayList holds is enclosed by chevrons
@@ -40,7 +46,8 @@
 <p> This works as long as the array is an integer array. If the array has elements of a different datatype, the loop
     variable's data type must be changed accordingly. The for each loop can be used for any collection, which includes
     both arrays and ArrayLists. </p>
-<p> Below is my example from a class assignment of a method that prints the point values of some Cards. </p>
+<p> Below is my example from a class assignment of a method that prints the point values of some Cards in a <b>2-D
+    array</b>. </p>
 <pre style="height: 480px"><code>  /**
    * Calculates points for hands and outputs sorted results.
    */
@@ -48,10 +55,10 @@
     for (int i = 0; i < 4; i++) {
       if (!bad[i]) { // if hand is valid
         int points = 0;
-        ArrayList<Card> spades = new ArrayList<Card>();
-        ArrayList<Card> hearts = new ArrayList<Card>();
-        ArrayList<Card> clubs = new ArrayList<Card>();
-        ArrayList<Card> diamonds = new ArrayList<Card>();
+        ArrayList&lt;Card> spades = new ArrayList&lt;Card>();
+        ArrayList&lt;Card> hearts = new ArrayList&lt;Card>();
+        ArrayList&lt;Card> clubs = new ArrayList&lt;Card>();
+        ArrayList&lt;Card> diamonds = new ArrayList&lt;Card>();
 
         for (int j = 0; j < 13; j++) {
           Card card = new Card(cards[i][j].rank, cards[i][j].suit);
@@ -123,5 +130,29 @@
     }
   }
 </code></pre>
+<h2> Important Terms </h2>
+<table>
+    <tr>
+        <th><u>Keyword</u></th>
+        <th><u>Definition</u></th>
+    </tr>
+    <tr>
+        <td>Element</td>
+        <td>The place in which a variable exists and can be seen</td>
+    </tr>
+    <tr>
+        <td>Index</td>
+        <td>Something that changes what can "see" an instance variable or method</td>
+    </tr>
+    <tr>
+        <td>Collection</td>
+        <td>A group of objects (can't hold primitive data types)</td>
+    </tr>
+    <tr>
+        <td>2-D Array</td>
+        <td>An array that contains arrays.</td>
+    </tr>
+</table>
+<br><br><br><br><br><br>
 </body>
 </html>

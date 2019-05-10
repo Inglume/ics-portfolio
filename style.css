@@ -7,10 +7,22 @@ body {
     margin: auto;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, table {
     max-width: 75%;
     margin: auto auto 20px;
     font-family: calibri, sans-serif;
+}
+
+h1 {
+    text-align: center;
 }
 
 pre {
@@ -25,12 +37,6 @@ iframe {
 }
 
 .menubar {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #000000;
-}
-
-.lessonbar {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     background-color: #000000;

@@ -11,6 +11,8 @@
 <p></p>
 <h1> OOP Part 1 </h1>
 <h2> What is OOP? </h2>
+<img src="oop1.jpg" class="center">
+<p></p>
 <p> Object-Oriented Programming (OOP) is the representation of a program as objects. The Java language is completely
     based upon everything being represented as classes and objects. Objects are created by classes, which serve as a
     template for objects made of that class type. Objects are created by calling the class's constructor, which makes an
@@ -31,6 +33,8 @@
     methods always start with 'get' and are followed by the variable name, and set methods start with 'set'. The
     reason why these exist will be explained in OOP Part 2. </p>
 <h2> Inheritance </h2>
+<p></p>
+<img src="inheritance.jpg" class="center">
 <p> Of the four OOP principles, inheritance is one of the more complex principles. Inheritance is when subclasses <i>inherit</i>
     attributes and behaviours from super classes. All subclasses will be of the type superclass and have all of their
     variables and methods. Inheritance is done in Java by using the <i>extends</i> keyword when defining a class. When
@@ -42,6 +46,7 @@
          System.out.println(name);
      }
  }
+
  public class Dog extends Animal {
      public void bark() {
          System.out.println("Ruff!");
@@ -49,15 +54,15 @@
  }
 </code></pre>
 <p> The following actions can be made: </p>
-<pre><code>
- Dog rex = new Dog();
+<pre><code> Dog rex = new Dog();
  rex.sayName();
  rex.bark();
 </code></pre>
+<h2> Important Terms </h2>
 <table>
     <tr>
-        <th>Keyword</th>
-        <th>Definition</th>
+        <th><u>Keyword</u></th>
+        <th><u>Definition</u></th>
     </tr>
     <tr>
         <td>Variable</td>
@@ -76,7 +81,6 @@
         <td>A class that inherits from a superclass</td>
     </tr>
 </table>
-
-<br><br><br><br>
+<br><br><br><br><br><br>
 </body>
 </html>

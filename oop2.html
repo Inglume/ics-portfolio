@@ -10,26 +10,32 @@
 <iframe width="100%" height="62px" src="lessons.html"></iframe>
 <p></p>
 <h1> OOP Part 2 </h1>
+<p> Object-Oriented Programming has 4 main principles: Inheritance (which was explained in OOP Part 1), Encapsulation,
+    Polymorphism, and Abstraction. The three remaining concepts are defined below. </p>
 <h2> Encapsulation </h2>
+<img src="encapsulation.jpg" class="center">
+<p></p>
 <p> One reason why OOP exists is because of encapsulation. Information stored inside a class can stay hidden from
     the rest of your program, classes outside of the class's inheritance, or anything but the class. One process of
-    encapsulation is by changing the <b>scope</b> of your variables. Another way is by using modifiers for instance
-    variables and methods. There are two most widely-used access modifiers, being <i>public</i> and <i>private</i>.
-    Public can be accessed by anything outside and inside of the class, but private can only be accessed by the class
-    itself. </p>
-<p> Often times, instance variables will be declared as private. This provides some security so objects that are made
-    can't be tampered with, but this means the <i>dot operator</i> can't be used. In order to see the variable,
-    accessors and mutators must be used instead. </p>
+    encapsulation is by changing the <b>scope</b> of your variables (keeping a variable inside a method or a block).
+    Another way is by using modifiers for instance variables and methods. There are two most widely-used access
+    modifiers, being <i>public</i> and <i>private</i>. Public can be accessed by anything outside and inside of the
+    class, but private can only be accessed by the class itself. </p>
+<p> Instance variables are commonly declared as private. This provides some security so objects that are made can't be
+    tampered with, but this means the <i>dot operator</i> can't be used. In order to see the variable, accessors and
+    mutators must be used instead. </p>
 <h2> Polymorphism </h2>
-<p> Polymorphism is the idea that you can have subclasses casted up to their superclass and then casted back down to
-    their subclass. This may be a bit hard to grasp, but it is crucial to know for OOP. First, I'll give an example of
-    class casting using some familiar terms.</p>
+<img src="polymorphism.png" class="center">
+<p></p>
+<p> Polymorphism is the idea that you can have subclasses <b>class casted</b> up to their superclass and then casted
+    back down to their subclass. This may be a bit hard to grasp, but it is crucial to know for OOP. First, I'll give an
+    example of class casting using some familiar terms.</p>
 <p> Let's say you have a class Animal, with a subclass Mammal and the class Mammal. You can <b>upcast</b> Mammal to
-    Animal.</p>
+    Animal. </p>
 <pre><code> Animal doggy = new Mammal(); </code></pre>
 <p> The java compiler will automatically upcast Mammal to Animal, you do not need to explicitly cast it with
-    parentheses. </p>
-<p> On the other hand, if you want to <b>downcast</b> back down to Mammal, you must explicitly cast it down. </p>
+    parentheses. On the other hand, if you want to <b>downcast</b> back down to Mammal, you must explicitly cast it
+    down. </p>
 <pre><code> Mammal puppy = (Mammal) doggy; </code></pre>
 <p> One reason why you would want to downcast and upcast all of this is to be able to refer to many subclasses with one
     superclass. For example, if you have a method that increases the age of an Animal by one, you don't need to create a
@@ -44,32 +50,46 @@
  Cat muffin = new Cat();
  incAge(muffin);
 </code></pre>
-
 <h2> Abstraction </h2>
-<p> Abstraction </p>
+<img src="abstraction.jpg" class="center">
+<p></p>
+<p> Abstraction itself is an abstract concept that is not very straightforward. It is still very important to OOP
+    design. Something that is abstract cannot have an instance of it made, because their methods are not
+    <b>implemented</b>. Abstract methods in an abstract class have a proper method header, but nothing within the method
+    itself. This means by itself, it is utterly useless. But classes that inherit from abstract classes are still able
+    to make instances of themselves. Also, because subclasses inherit from the abstract class, the abstract methods must
+    be properly implemented. </p>
+<p> If you want to design an animal that can eat food, but aren't sure if it eats meat or vegetables, an <i>eat()</i>
+    method can be defined as abstract. </p>
+<pre><code> public abstract void eat();</code></pre>
+<p> Later on in a dog or cow class, the eat method can be implemented properly and used normally like any other method.
+    Since the method is abstract in the superclass, it must be implemented in the dog and cow class, which makes sense
+    in an OOP perspective. All animals should be able to eat, even though they eat in different ways. </p>
 <p> Using abstraction and polymorphism together, it is possible to make objects of an abstract datatype. These objects
     aren't really abstract, but they are upcasted to make it seem like they are. </p>
-<br><br><br><br>
+<h2> Important Terms </h2>
 <table>
     <tr>
-        <th>Keyword</th>
-        <th>Definition</th>
+        <th><u>Keyword</u></th>
+        <th><u>Definition</u></th>
     </tr>
     <tr>
-        <td>Variable</td>
-        <td>Definition</td>
+        <td>Scope</td>
+        <td>The place in which a variable exists and can be seen</td>
     </tr>
     <tr>
-        <td>Method</td>
-        <td>Definition</td>
+        <td>Access Modifier</td>
+        <td>Something that changes what can "see" an instance variable or method</td>
     </tr>
     <tr>
-        <td>Superclass</td>
-        <td>Definition</td>
+        <td>Class Casting</td>
+        <td>Casting a class down to its subclass or up to its superclass</td>
+    </tr>
+    <tr>
+        <td>Implement</td>
+        <td>Writing a program that can be run and will do something</td>
     </tr>
 </table>
-
-<p> Introductory exercise to OOP by representing a fairytale with Java OOP concepts:
-    <a href="shrek.html">Intro to OOP</a>
+<br><br><br><br><br><br>
 </body>
 </html>

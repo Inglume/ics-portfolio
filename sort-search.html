@@ -10,13 +10,15 @@
 <iframe width="100%" height="62px" src="lessons.html"></iframe>
 <p></p>
 <h1> Searches </h1>
+<img src="search.jpg" class="center">
+<p></p>
 <p> Searches are very important for finding things in big data. Especially in the Information Age, the retrieval of data
-    must be as quick and efficient as possibly to make sure </p>
+    must be as quick and efficient as possible in this busy world. </p>
 <h2> Sequential Search </h2>
 <p> The sequential search is the way any ordinary person would search data. Each element in the set is checked
     sequentially starting at the first element and ending at the last element. This search has a worst-case time
-    complexity of O(n). This search is very, very easy to implement but does not work for large amounts of data or if it
-    needs to be run many times. </p>
+    complexity of O(n). This search is very, very easy to implement but does not work well for large amounts of data or
+    if it needs to be run many times. </p>
 <h2> Binary Search </h2>
 <p> Binary search is more efficient than selection search, having a worst-case time complexity of O(log n). The special
     thing about binary search is that the data must be sorted in order to work. The binary search starts in the middle
@@ -24,8 +26,11 @@
     if the target is greater than the element, the next check is done in the middle of the right half. If the target is
     lesser than the element, the next check is done in the middle of the left half of the set. </p>
 <h1> Sorts </h1>
+<img src="sort.jpg" class="center">
+<p></p>
 <p> Sorting is very important in all sorts of ways. Names are sorted on an attendance list, times are sorted in a race,
-    blabhlabhab. That's why there are so many different sorting algorithms that all work so differently. </p>
+    etc. That's why there are so many different sorting algorithms that all work so differently. Here are some of the
+    ones that everyone should know. </p>
 <h2> Insertion and Selection Sort </h2>
 <p> The simplest sorting algorithms may be the insertion and selection sort. They are not the most efficient sorts, but
     they are straight-forward. The largest similarity between the two sorts is that they partition the array into an
@@ -54,10 +59,15 @@
     for the heap sort. </p>
 <p> The heap sort needs two functions, the heapify and the sort itself. The heapify method turns an array into a max
     heap. It does this by checking a target node's children if they are greater than the parent, and swaps the greatest
-    one with the parent accordingly. If there was a swap, heapify is called again on the node where the child used to be. </p>
-<p> Sorts don't have much room for creativity and have to be written a specific way in order to work.
-    This is why I chose to include an implementation done by GeeksForGeeks, a reputable site known to educate
-    programming concepts. </p>
+    one with the parent accordingly. If there was a swap, heapify is called again on the node where the child used to
+    be. </p>
+<p> The sort starts with building the heap, which means calling heapify on every parent node, starting at the last one
+    and ending at the root node (the first parent node). Then the root node is removed from the unsorted list and
+    replaced with the last node. The swapped node is heapified. The process of removing and heapifying is repeated over
+    and over until the heap is depleted in size. </p>
+<p> Sorts don't have much room for creativity and have to be written a specific way in order to work. This is why I
+    chose to include an implementation done by GeeksForGeeks, a reputable site known to educate programming
+    concepts. </p>
 <pre style="height: 480px"><code> // Java program for implementation of Heap Sort
 public class HeapSort
 {
@@ -133,6 +143,6 @@ public class HeapSort
     }
 }
 </code></pre>
-<p></p>
+<br><br><br><br><br><br>
 </body>
 </html>
