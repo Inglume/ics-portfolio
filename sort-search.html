@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<iframe width="100%" scrolling="no" src="header.html"></iframe>
+<iframe width="100%" height="156px" src="header.html"></iframe>
+<iframe width="100%" height="62px" src="lessons.html"></iframe>
 <p></p>
 <h1> Searches </h1>
-<p> Searches are very important for finding things in big data. </p>
+<p> Searches are very important for finding things in big data. Especially in the Information Age, the retrieval of data
+    must be as quick and efficient as possibly to make sure </p>
 <h2> Sequential Search </h2>
 <p> The sequential search is the way any ordinary person would search data. Each element in the set is checked
     sequentially starting at the first element and ending at the last element. This search has a worst-case time
@@ -48,8 +50,15 @@
     uses the heap data structure, which is based off of the binary tree data structure. In a binary tree, every parent
     node has two children. A heap can either be a maximum or minimum heap. In a maximum heap, the parent is always
     greater than its children, and in a minimum heap the parent is less than its children. For the example shown below
-    from GeeksForGeeks, a maximum heap will be used and is the most common heap used for the heap sort. </p>
-<pre><code> // Java program for implementation of Heap Sort
+    from GeeksForGeeks (source included in bibliography), a maximum heap will be used and is the most common heap used
+    for the heap sort. </p>
+<p> The heap sort needs two functions, the heapify and the sort itself. The heapify method turns an array into a max
+    heap. It does this by checking a target node's children if they are greater than the parent, and swaps the greatest
+    one with the parent accordingly. If there was a swap, heapify is called again on the node where the child used to be. </p>
+<p> Sorts don't have much room for creativity and have to be written a specific way in order to work.
+    This is why I chose to include an implementation done by GeeksForGeeks, a reputable site known to educate
+    programming concepts. </p>
+<pre style="height: 480px"><code> // Java program for implementation of Heap Sort
 public class HeapSort
 {
     public void sort(int arr[])
